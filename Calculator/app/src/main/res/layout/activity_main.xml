@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/screen_input"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:gravity="end"
+        android:text=""
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/screen_result"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:gravity="end"
+        android:text=""
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/screen_input" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/screen_result">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/btn_reset"
+                style="@style/calc_buttons_op"
+                android:text="@string/reset" />
+
+            <TextView
+                android:id="@+id/btn_bracket_open"
+                style="@style/calc_buttons_op"
+                android:text="@string/close_bracket" />
+
+            <TextView
+                android:id="@+id/btn_bracket_close"
+                style="@style/calc_buttons_op"
+                android:text="@string/open_bracket" />
+
+            <TextView
+                android:id="@+id/btn_divide"
+                style="@style/calc_buttons_op"
+                android:text="@string/divide" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/btn_seven"
+                style="@style/calc_buttons_num"
+                android:text="@string/seven" />
+
+            <TextView
+                android:id="@+id/btn_eight"
+                style="@style/calc_buttons_num"
+                android:text="@string/eight" />
+
+            <TextView
+                android:id="@+id/btn_nine"
+                style="@style/calc_buttons_num"
+                android:text="@string/nine" />
+
+            <TextView
+                android:id="@+id/btn_minus"
+                style="@style/calc_buttons_op"
+                android:text="@string/minus" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/btn_four"
+                style="@style/calc_buttons_num"
+                android:text="@string/four" />
+
+            <TextView
+                android:id="@+id/btn_five"
+                style="@style/calc_buttons_num"
+                android:text="@string/five" />
+
+            <TextView
+                android:id="@+id/btn_six"
+                style="@style/calc_buttons_num"
+                android:text="@string/six" />
+
+            <TextView
+                android:id="@+id/btn_plus"
+                style="@style/calc_buttons_op"
+                android:text="@string/plus" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/btn_one"
+                style="@style/calc_buttons_num"
+                android:text="@string/one" />
+
+            <TextView
+                android:id="@+id/btn_two"
+                style="@style/calc_buttons_num"
+                android:text="@string/two" />
+
+            <TextView
+                android:id="@+id/btn_three"
+                style="@style/calc_buttons_num"
+                android:text="@string/three" />
+
+            <TextView
+                android:id="@+id/btn_times"
+                style="@style/calc_buttons_op"
+                android:text="@string/times" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/btn_dot"
+                style="@style/calc_buttons_num"
+                android:text="@string/dot" />
+
+            <TextView
+                android:id="@+id/btn_zero"
+                style="@style/calc_buttons_num"
+                android:text="@string/zero" />
+
+            <ImageView
+                android:id="@+id/btn_delete"
+                style="@style/calc_buttons_del"
+                android:contentDescription="@string/delete"
+                android:src="@drawable/ic_baseline_backspace_24"
+                android:text="@string/delete" />
+
+            <TextView
+                android:id="@+id/btn_equals"
+                style="@style/calc_buttons_equals"
+
+                android:text="@string/equals" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
